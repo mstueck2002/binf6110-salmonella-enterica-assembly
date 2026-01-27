@@ -19,3 +19,5 @@ zcat SRR32410565.fastq.gz 2>/dev/null | awk 'NR%4==2 {print length($0); exit}'
 
 seqtk fqchk SRR32410565.fastq.gz 2>/dev/null | head
 
+#Evaluate sequence quality for assembly 
+fastqc SRR32410565.fastq.gz
