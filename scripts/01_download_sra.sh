@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#Requires: conda env "sra_env" (sra-tools, seqtk)
 set -euo pipefailh
 
 #Use SRA tools to fetch sequence data
@@ -15,5 +16,6 @@ ls SRR32410565.fastq.gz
 zcat SRR32410565.fastq.gz 2>/dev/null | head
 zcat SRR32410565.fastq.gz | wc -l
 zcat SRR32410565.fastq.gz 2>/dev/null | awk 'NR%4==2 {print length($0); exit}'
+
 seqtk fqchk SRR32410565.fastq.gz 2>/dev/null | head
 
