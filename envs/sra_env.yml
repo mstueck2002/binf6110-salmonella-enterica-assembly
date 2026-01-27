@@ -58,4 +58,4 @@ dependencies:
   - seqtk=1.5
   - sra-tools=3.2.1
   - zstd=1.5.7
-prefix: /opt/anaconda3/envs/sra_env
+prefix: /opt/anaconda3/envs/sra_env5
