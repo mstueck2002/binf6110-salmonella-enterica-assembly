@@ -1,0 +1,16 @@
+# Raw sequencing data
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+
+# SRA cache
+*.sra
+ncbi/
+
+# Large bioinformatics outputs
+*.bam
+*.sam
+*.vcf
+*.vcf.gz
+
