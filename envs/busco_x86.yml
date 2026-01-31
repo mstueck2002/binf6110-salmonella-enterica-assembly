@@ -1,0 +1,9 @@
+name: busco_x86
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - busco=5.8.3
+  - python=3.10
+prefix: /opt/anaconda3/envs/busco_x86
