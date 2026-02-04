@@ -3,7 +3,7 @@
 set -euo pipefail
 
 MEDAKA_ASSEMBLY_PATH="$HOME/medaka_out/consensus.fasta"
-REFERENCE="GCA_002507875.2_ASM250787v2_genomic.fna"
+REFERENCE="reference_fasta.fna"
 READS="SRR32410565.fastq.gz"
 
 #Sanity Check
