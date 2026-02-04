@@ -3,7 +3,7 @@
 set -euo pipefail
 
 MEDAKA_ASSEMBLY_PATH="$HOME/medaka_out/consensus.fasta"
-REFERENCE="GCA_002507875.2_ASM250787v2_genomic.fna"
+REFERENCE="reference_fasta.fna"
 
 #Sanity check
 [[ -f "$MEDAKA_ASSEMBLY_PATH" ]] || { echo "Medaka Assembly not found: $MEDAKA_ASSEMBLY_PATH" >&2; exit 1; }
