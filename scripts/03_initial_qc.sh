@@ -4,7 +4,7 @@ set -euo pipefail
 
 #Specify paths
 ASSEMBLY_PATH="$HOME/out_nanopore_flye/assembly.fasta"
-REFERENCE="GCA_002507875.2_ASM250787v2_genomic.fna
+REFERENCE="reference_fasta.fna"
 
 #Sanity check
 [[ -f "$ASSEMBLY_PATH" ]] || { echo "Assembly not found: $ASSEMBLY_PATH" >&2; exit 1; }
