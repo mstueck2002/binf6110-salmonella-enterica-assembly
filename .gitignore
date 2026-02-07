@@ -14,3 +14,5 @@ ncbi/
 *.vcf
 *.vcf.gz
 
+.DS_Store
+.Rhistory
