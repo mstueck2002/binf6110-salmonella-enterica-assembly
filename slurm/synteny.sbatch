@@ -10,4 +10,4 @@ set -euo pipefail
 module load StdEnv/2023
 module load miniconda3
 
-conda run -n syny bash scripts/07_synteny.sh
+conda run -n syny_env bash scripts/07_synteny.sh
