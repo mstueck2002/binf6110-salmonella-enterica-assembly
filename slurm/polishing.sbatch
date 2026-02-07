@@ -6,6 +6,6 @@
 #SBATCH --output=slurm-%j.out
 
 module load StdEnv/2023
-source activate medaka_env
+module load miniconda3
 
-bash scripts/04_polishing.sh
+conda run -n medaka_env bash scripts/04_polishing.sh
