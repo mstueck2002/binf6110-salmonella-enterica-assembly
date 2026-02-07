@@ -40,7 +40,13 @@ Seqtk and FastQC analyses indicated that 196,031 Nanopore reads were obtained, t
 ### Reference Genome Identification and De Novo Genome Assembly Metrics 
 De novo assembly with Flye produced four contigs totalling 5,147,510 bp. The first 1,000,000 bases of contig_1 were extracted and used as the query for an NCBI nucleotide BLAST search, which returned a 99.99% identity match to the Salmonella enterica subsp. enterica serovar Typhimurium strain LT2 complete genome (NCBI Assembly ASM694v2). The alignment exhibited 96% query coverage and an E-value of 0, indicating a highly significant match, and was therefore selected as the reference genome for downstream analyses. (Figure 1)
 
-\usepackage{graphicx}
+<p align="center">
+  <img src="F1.BLAST_Query.png" alt="Figure 1. NCBI Nucleotide BLAST Query">
+</p>
+
+**Figure 1. NCBI Nucleotide BLAST Query.** Query search using the first 1,000,000 bases of contig_1 returned a 99.99% identity match to *Salmonella enterica* subsp. *enterica* serovar Typhimurium strain LT2 complete genome.
+
+
 
 
 
