@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#Requires: conda env "syny"
+#Requires: conda env "syny_env"
 set -euo pipefail
 
 MEDAKA_ASSEMBLY="medaka_out/consensus.fasta"
