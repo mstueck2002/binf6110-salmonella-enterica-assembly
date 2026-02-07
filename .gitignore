@@ -1,3 +1,11 @@
+# Large data and outputs
+output_files/
+input_data/
+
+# OS junk
+.DS_Store
+.Rhistory
+
 # Raw sequencing data
 *.fastq
 *.fastq.gz
