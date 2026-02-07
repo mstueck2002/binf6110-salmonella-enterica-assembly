@@ -1,9 +1,0 @@
-name: quast_env
-channels:
-  - bioconda
-  - conda-forge
-  - defaults
-dependencies:
-  - python=3.10
-  - quast
-prefix: /opt/anaconda3/envs/quast_env
