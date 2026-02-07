@@ -1,0 +1,37 @@
+name: minimap2_env
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - bcftools=1.6
+  - bzip2=1.0.8
+  - c-ares=1.11.0
+  - ca-certificates=2026.1.4
+  - curl=7.71.1
+  - htslib=1.6
+  - k8=0.2.5
+  - krb5=1.17.2
+  - libcurl=7.71.1
+  - libcxx=21.1.8
+  - libdeflate=1.2
+  - libedit=3.1.20250104
+  - libev=4.33
+  - liblzma=5.8.2
+  - liblzma-devel=5.8.2
+  - libnghttp2=1.41.0
+  - libssh2=1.10.0
+  - libzlib=1.2.13
+  - minimap2=2.28
+  - mummer=3.23
+  - ncurses=6.5
+  - openssl=1.1.1w
+  - perl=5.32.1
+  - samtools=1.6
+  - tk=8.6.13
+  - xz=5.8.2
+  - xz-gpl-tools=5.8.2
+  - xz-tools=5.8.2
+  - zlib=1.2.13
+  - zstd=1.5.6
+prefix: /opt/anaconda3/envs/minimap2_env
