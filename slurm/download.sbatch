@@ -6,6 +6,7 @@
 #SBATCH --output=slurm-%j.out
 
 module load StdEnv/2023
-source activate sra_env
+module load miniconda3
 
-bash scripts/01_download_sra.sh
+conda run -n sra_env bash scripts/01_download_sra.sh
+
