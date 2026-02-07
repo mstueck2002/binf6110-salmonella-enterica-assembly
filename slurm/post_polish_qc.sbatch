@@ -6,5 +6,7 @@
 #SBATCH --output=slurm-%j.out
 
 module load StdEnv/2023
+module load miniconda3
 
-bash scripts/05_post_polish_qc.sh
+#Run second QC (QUAST + BUSCO)
+conda run -n qc_env bash scripts/05_post_polish_qc.sh
