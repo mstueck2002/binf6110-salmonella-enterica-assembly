@@ -1,9 +1,0 @@
-name: minimap2_env
-channels:
-  - bioconda
-  - conda-forge
-  - defaults
-dependencies:
-  - samtools
-  - minimap2
-prefix: /opt/anaconda3/envs/minimap2_env
