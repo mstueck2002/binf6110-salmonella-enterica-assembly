@@ -6,6 +6,6 @@
 #SBATCH --output=slurm-%j.out
 
 module load StdEnv/2023
-source activate minimap2_env
+module load miniconda3
 
-bash scripts/06_alignment.sh
+conda run -n minimap2_env bash scripts/06_alignment.sh
