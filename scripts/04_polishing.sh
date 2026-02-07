@@ -1,17 +1,19 @@
 #!/usr/bin/env bash
-#Requires: conda env "medaka_env"
+# Requires: conda env "medaka_env"
 set -euo pipefail
 
-ASSEMBLY_PATH="$HOME/out_nanopore_flye/assembly.fasta"
-READS="SRR32410565.fastq.gz"
+ASSEMBLY="out_nanopore_flye/10-consensus/consensus.fasta"
+FASTQ="SRR32410565.fastq.gz"
 MODEL="r1041_e82_400bps_sup_v5.0.0"
+THREADS=10
 
-#Sanity check
-[[ -f "$READS" ]] || { echo "FASTQ not found: $READS" >&2; exit 1; }
-[[ -f "$ASSEMBLY_PATH" ]] || { echo "Assembly not found: $ASSEMBLY_PATH" >&2; exit 1; }
+# Sanity checks
+[[ -f "$FASTQ" ]]    || { echo "FASTQ not found: $FASTQ" >&2; exit 1; }
+[[ -f "$ASSEMBLY" ]] || { echo "Assembly not found: $ASSEMBLY" >&2; exit 1; }
 
+# Run Medaka polishing
 medaka_consensus -m "$MODEL" \
-  -i "$READS" \
-  -d "$ASSEMBLY_PATH" \
+  -i "$FASTQ" \
+  -d "$ASSEMBLY" \
   -o medaka_out \
-  -t 12
+  -t "$THREADS"
