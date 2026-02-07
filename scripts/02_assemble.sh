@@ -2,10 +2,11 @@
 #Requires: conda env "flye_env"
 set -euo pipefail
 
-READS="SRR32410565.fastq.gz"
-
-#Run Flye assembler
-flye --nano-hq "$READS" --out-dir out_nanopore_flye --threads 12
+FASTQ="SRR32410565.fastq.gz"
 
 #Sanity check
-[[ -f "$READS" ]] || { echo "FASTQ not found"; exit 1; }
+[[ -f "$FASTQ" ]] || { echo "FASTQ not found"; exit 1; }
+
+#Run Flye assembler
+flye --nano-hq "$FASTQ" --out-dir out_nanopore_flye --threads 12
+
