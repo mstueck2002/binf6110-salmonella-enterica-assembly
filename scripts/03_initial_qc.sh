@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#Requires: conda env "quast_env" and "busco_x86"
+#Requires: conda env "qc_env"
 set -euo pipefail
 
 #Specify paths
