@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#Requires: conda env "prokka_env" and "syny"
+#Requires: conda env "syny"
 set -euo pipefail
 
 MEDAKA_ASSEMBLY="medaka_out/consensus.fasta"
